@@ -41,7 +41,12 @@ public class Facturacion
         Producto escoba = new Producto("Escoba", 120.0, hogar, 1);
         
         //Definicion de cliente
-        Cliente cliente = new Cliente("Humberto", "0510-1998-01478", "Choloma", "2263-1456");
+        Cliente cliente = new Cliente("Nestor Humberto Espinal", "0510-1998-01478", "Choloma", "2263-1456");
+            System.out.println("===================Cliente=====================");
+            System.out.println("Nombre: " + cliente.getNombre());
+            System.out.println("RTN: " + cliente.getRtn());
+            System.out.println("Direccion: " + cliente.getDireccion());
+            System.out.println("Numero de telefono: " + cliente.getTelefono());
         
         //Generacion de Factura
         Factura factura = new Factura(1, "20-07-24", cliente);
