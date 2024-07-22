@@ -21,7 +21,7 @@ public class Facturacion
             for(Producto producto:productos)
             {
                 total = total + (producto.getPrecio() * producto.getCantidad());
-                System.out.println(producto.getProducto() + "|" + producto.getCantidad() + "|" + producto.getPrecio() + "|");
+                System.out.println("|" + producto.getProducto() + "|      |" + producto.getCantidad() + "|      |" + producto.getPrecio() + "|");
             }
             System.out.println("=================Factura========================= ");
             return total;
