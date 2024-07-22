@@ -13,15 +13,17 @@ public class Facturacion
         //Funcion pagar factura
         public static double pagarFactura(Factura factura)
         {
-            double total = 0;
+           double total = 0;
+            System.out.println("===================Productos=====================");
 
             ArrayList<Producto> productos = factura.getProductos();
-            
+            System.out.println("Producto|Cantidad|Precio|");
             for(Producto producto:productos)
             {
                 total = total + (producto.getPrecio() * producto.getCantidad());
-                
+                System.out.println(producto.getProducto() + "|" + producto.getCantidad() + "|" + producto.getPrecio() + "|");
             }
+            System.out.println("=================Factura========================= ");
             return total;
         }
 
@@ -47,7 +49,6 @@ public class Facturacion
         factura.agregarProducto(microonda);
         factura.agregarProducto(escoba);
         
-        System.out.println("=================Productos========================= ");
         System.out.println("El total a pagar de la factura es: " + pagarFactura(factura));
     }   
 }
