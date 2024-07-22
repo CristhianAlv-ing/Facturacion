@@ -20,7 +20,6 @@ public class Facturacion
             for(Producto producto:productos)
             {
                 total = total + (producto.getPrecio() * producto.getCantidad());
-                System.out.println(producto.getProducto());
                 
             }
             return total;
